@@ -1,3 +1,4 @@
+from django.contrib.messages import constants as messages
 """
 Django settings for btreproject project.
 
@@ -26,7 +27,7 @@ SECRET_KEY = '!7(20xwm%=6lhi$)l2y*m)%vxe55#w(%rl_bmn#c^-f+l^=_83'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['a3918a26.ngrok.io']
 
 
 # Application definition
@@ -135,13 +136,11 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'btreproject/static')
 ]
-#Media Folder SEtting
+# Media Folder SEtting
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-#mesage tags
-from django.contrib.messages import constants as messages
+# mesage tags
 MESSAGE_TAGS = {
-    messages.ERROR:'danger'
+    messages.ERROR: 'danger'
 }
-
