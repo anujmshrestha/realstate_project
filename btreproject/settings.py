@@ -27,7 +27,7 @@ SECRET_KEY = '!7(20xwm%=6lhi$)l2y*m)%vxe55#w(%rl_bmn#c^-f+l^=_83'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['a3918a26.ngrok.io', '127.0.0.1']
+ALLOWED_HOSTS = ['a3918a26.ngrok.io','https://gongrealstate.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -130,11 +130,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'btreproject/static')
+    #os.path.join(BASE_DIR, 'btreproject/static')
+        os.path.join(BASE_DIR, 'static')
 ]
 # Media Folder SEtting
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
