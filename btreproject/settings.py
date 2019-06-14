@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!7(20xwm%=6lhi$)l2y*m)%vxe55#w(%rl_bmn#c^-f+l^=_83'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['a3918a26.ngrok.io','gongrealstate.herokuapp.com','127.0.0.1']
 
